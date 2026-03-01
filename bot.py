@@ -9,7 +9,7 @@ import random
 
 DATA_FILE = 'bills.xlsx'
 SUBSCRIBERS_FILE = 'subscribers.txt'
-ADMIN_ID = 6594756464  
+ADMIN_ID =   
 
 def get_main_menu(user_id=None) -> InlineKeyboardMarkup:
     keyboard = [
@@ -191,7 +191,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await query.message.reply_text("ليس لديك صلاحية استخدام هذا الزر.")
 
 if __name__ == '__main__':
-    TOKEN = "8185399272:AAGATkqVDOlym1p_BEJc1Feqjza1yzaNnwY"  # ← استبدله بتوكن البوت الخاص بك
+    TOKEN = ""  # ← استبدله بتوكن البوت الخاص بك
     bot = Bot(TOKEN)
     bot.delete_webhook()
     app = ApplicationBuilder().token(TOKEN).build()
